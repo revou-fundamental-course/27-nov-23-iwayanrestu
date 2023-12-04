@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keliling Segitiga</title>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/script.js"></script>
   </head>
+
   <body>
+    <!-- NAVIGATION BAR -->
     <header id="nav-bar">
       <h3 id="logo">KALKULATOR SEGITIGA</h3>
       <nav>
@@ -16,10 +19,11 @@
       </nav>
     </header>
     <main>
+      <!-- IMAGE -->
       <section class="gambar">
         <img
           class="gambar"
-          id="segitiga-luas-gambar"
+          id="segitiga-gambar"
           src="assets/segitiga.png"
           alt="Gambar Segitiga dengan keterangan alas dan tinggi"
         />
@@ -31,21 +35,32 @@
         />
       </section>
 
+      <!-- INPUT -->
       <section class="input-section">
-        <label for="">Sisi A</label>
-        <input type="number" id="kalkulator-input" />
-        <label for="">Sisi B</label>
-        <input type="number" id="kalkulator-input" />
-        <label for="">Sisi C</label>
-        <input type="number" id="kalkulator-input" />
+        <label for="">Sisi A (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiA" />
+        <label for="">Sisi B (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiB" />
+        <label for="">Sisi C (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiC" />
       </section>
 
       <div class="buttons">
-        <button id="button-hitung">Hitung</button>
-        <button id="button-reset">Reset</button>
+        <button id="button-hitung" onclick="kelilingSegitiga()">Hitung</button>
+        <button id="button-reset" onclick="resetKeliling()">Reset</button>
       </div>
+
+      <section class="Output">
+        <label for="" id="output-judul">Hasil </label>
+        <label for="" class="output-tampil">Keliling Segitiga : </label>
+        <div class="output-tampil" id="hasil">
+          <!-- Output -->
+        </div>
+      </section>
     </main>
+
     <footer>
+      <!-- FOOTER -->
       <section class="link-footer">
         <a href="https://www.linkedin.com/in/i-wayan-restu/">LinkedIn</a>
         <a href="https://www.instagram.com/iwrmt/">Instagram</a>

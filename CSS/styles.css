@@ -33,10 +33,10 @@ nav a:hover {
   align-items: center;
 }
 
-#segitiga-luas-gambar {
+#segitiga-gambar {
   width: 25%;
   height: auto;
-  margin-top: -50px;
+  margin-top: -10px;
 }
 #rumus-luas {
   width: 35%;
@@ -58,13 +58,13 @@ label {
   color: whitesmoke;
 }
 
-#kalkulator-input {
+.kalkulator-input {
   outline: none;
   border-radius: 10px;
   padding: 10px;
   border: 1px solid grey;
 }
-#kalkulator-input:focus {
+.kalkulator-input:focus {
   border: 1px solid red;
 }
 
@@ -73,7 +73,7 @@ label {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #button-hitung {
   background-color: #55c2da;
@@ -163,4 +163,33 @@ footer {
   color: whitesmoke;
   display: flex;
   justify-content: left;
+}
+
+/*OUTPUT SECTION*/
+
+.Output {
+  display: flex;
+  background-color: #427d9d;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+#output-judul {
+  display: flex;
+  align-items: center;
+  background-color: #0b4260;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.output-tampil {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.text-output {
+  color: whitesmoke;
 }
