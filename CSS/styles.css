@@ -5,10 +5,11 @@ body {
 #nav-bar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #164863;
   border-radius: 10px;
-  padding: 0px 15px;
+  padding: 10px 15px;
 }
 
 #logo {
@@ -31,23 +32,27 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  gap: 70px;
 }
 
 #segitiga-gambar {
   width: 25%;
   height: auto;
-  margin-top: -10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-#rumus-luas {
-  width: 35%;
-  height: auto;
+#rumus-img {
+  width: 25%;
+  transform: scale(2);
+  margin-bottom: 15px;
 }
 /*INPUT SECTION*/
 
 .input-section {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #427d9d;
   padding: 10px 10px;
   border-radius: 10px;
@@ -144,8 +149,8 @@ footer {
   flex-direction: column;
   margin-top: 300px;
   margin-bottom: 300px;
-  margin-left: 200px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 0px 25px;
   background-color: #427d9d;
 }
