@@ -8,7 +8,7 @@ function luasSegitiga() {
   }
 
   let hasilLuas = 0.5 * alas * tinggi;
-  var elemenHasil = document.getElementById("hasil");
+  var elemenHasil = document.getElementById("hasil-luas");
   elemenHasil.innerHTML = `
   <p class = "text-output">${hasilLuas.toFixed(2)} cm²</p>`;
 }
@@ -31,7 +31,7 @@ function kelilingSegitiga() {
   }
 
   let hasilKeliling = sisiA + sisiB + sisiC;
-  var elemenHasil = document.getElementById("hasil");
+  var elemenHasil = document.getElementById("hasil-keliling");
   elemenHasil.innerHTML = `
   <p class = "text-output">${hasilKeliling.toFixed(2)} cm</p>`;
 }
@@ -39,11 +39,11 @@ function kelilingSegitiga() {
 function resetLuas() {
   document.getElementById("input-alas").value = " ";
   document.getElementById("input-tinggi").value = " ";
-  document.getElementById("hasil").innerHTML = " ";
+  document.getElementById("hasil-luas").innerHTML = " ";
 }
 function resetKeliling() {
   document.getElementById("input-sisiA").value = " ";
   document.getElementById("input-sisiB").value = " ";
   document.getElementById("input-sisiC").value = " ";
-  document.getElementById("hasil").innerHTML = " ";
+  document.getElementById("hasil-keliling").innerHTML = " ";
 }

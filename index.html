@@ -5,25 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/script.js"></script>
   </head>
   <body>
-    <!-- NAVIGATION BAR -->
-    <header id="nav-bar">
+    <!-- TITLE BAR -->
+    <header id="header-title">
       <h3 id="logo">KALKULATOR SEGITIGA</h3>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="luas.html">Luas Segitiga</a>
-        <a href="keliling.html">Keliling Segitiga</a>
-      </nav>
     </header>
     <main>
       <section class="home">
         <p id="greet-home">WELCOME!</p>
         <p id="info-home">
-          You can use the navigation bar to access the features on this website,
-          happy browsing!
+          Scroll down to access the features on this website, happy browsing!
         </p>
       </section>
+
+      <!-- LUAS SEGITIGA -->
+   <section class="features" id="luas-features">
+      <h4 class="judul-section" id="judul-luas">Luas Segitiga</h3>
+
+      <!-- IMAGE -->
+      <section class="gambar">
+        <img
+          class="gambar"
+          id="segitiga-gambar"
+          src="assets/segitiga.png"
+          alt="Gambar Segitiga dengan keterangan alas dan tinggi"
+        />
+        <img
+          class="gambar"
+          id="rumus-img"
+          src="assets/rumus-luas.png"
+          alt="Rumus untuk menentukan luas segitiga"
+        />
+      </section>
+
+      <!-- INPUT -->
+      <section class="input-section">
+        <label for="">Alas (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-alas" />
+        <label for="">Tinggi (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-tinggi" />
+      </section>
+
+      <div class="buttons">
+        <button id="button-hitung" onclick="luasSegitiga()">Hitung</button>
+        <button id="button-reset" onclick="resetLuas()">Reset</button>
+      </div>
+
+      <section class="Output">
+        <label for="" id="output-judul">Hasil </label>
+        <label for="" class="output-tampil">Luas Segitiga : </label>
+        <div class="output-tampil" id="hasil-luas">
+          <!-- Output -->
+        </div>
+      </section>
+    </section>
+
+      <!-- KELILING SEGITIGA -->
+    <section class="features" id="keliling-features">
+      <h4 class="judul-section" id="judul-keliling">Keliling Segitiga</h3>
+
+      <!-- IMAGE -->
+      <section class="gambar">
+        <img
+          class="gambar"
+          id="segitiga-gambar"
+          src="assets/segitiga.png"
+          alt="Gambar Segitiga dengan keterangan alas dan tinggi"
+        />
+        <img
+          class="gambar"
+          id="rumus-img"
+          src="assets/rumus-keliling.png"
+          alt="Rumus untuk menentukan luas segitiga"
+        />
+      </section>
+
+      <!-- INPUT -->
+      <section class="input-section">
+        <label for="">Sisi A (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiA" />
+        <label for="">Sisi B (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiB" />
+        <label for="">Sisi C (cm) </label>
+        <input type="number" class="kalkulator-input" id="input-sisiC" />
+      </section>
+
+      <div class="buttons">
+        <button id="button-hitung" onclick="kelilingSegitiga()">Hitung</button>
+        <button id="button-reset" onclick="resetKeliling()">Reset</button>
+      </div>
+
+      <section class="Output">
+        <label for="" id="output-judul">Hasil </label>
+        <label for="" class="output-tampil">Keliling Segitiga : </label>
+        <div class="output-tampil" id="hasil-keliling">
+          <!-- Output -->
+        </div>
+      </section>
+    </section>
+
+
     </main>
     <footer>
       <!-- FOOTER -->
